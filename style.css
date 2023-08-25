@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    background-color: #E3F4F4;
+}
+.cont{
+    background-color: #E3F4F4;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    padding:1rem;
+}
+
+.top{
+    background-color: #C4DFDF;
+}
+.formControl{
+    width :25rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    position:relative;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.formControl input{
+    width:100%;
+    padding:17px 14px;
+    outline:0;
+    border:0;
+    font-size: 15px;
+    letter-spacing:0.5px;
+}
+.formControl i{
+    position: relative;
+    top:1.1rem;
+    right:1rem;
+}
+.countries{
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap:10px;
+}
+
+.country{
+    margin-top:20px;
+    min-height: 400px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    width:300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.country:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.country-img{
+    height:250px;
+    object-fit: cover;
+}
+
+.country-img img{
+    width:100%;
+    height:100%;
+}
+
+.country-info{
+    padding:0.8rem;
+}
+
+.country-info h5{
+    padding:8px;
+    font-size:20px;
+    letter-spacing: 1px;
+}
+
+.country-info p>strong{
+    font-weight: 600;
+}
+
+strong{
+    margin-right: 3px;
+    font-weight: 600;
+}
+
+.countryModal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.514);
+    
+}
+.countryModal h1{
+    position: relative;
+    left:55rem;
+    top:12rem;
+    z-index:1;
+}
+.modal{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+    height:90vh;
+    position:relative;
+    bottom:5rem;
+    background-color:#C4DFDF;;
+    position:relative;
+    left:14.6rem;
+    top:1.5rem;
+    border-radius: 1rem;
+}
+
+.back{
+    position:absolute;
+    top:7rem;
+    left:20rem;
+    background:#fdfdfd;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding:10px 20px;
+    font-size: 16px;
+    letter-spacing:1px;
+    border-radius: 5px;
+    cursor:pointer;
+    z-index:2;
+}
+.leftModal {
+    width:50%;
+    height:50vh;
+}
+.rightModal{
+    width:50%; 
+    display:flex;
+    flex-direction:column;
+}
+.leftModal img{
+    width:80%;
+    height:100%;
+    object-fit: cover;
+    padding:5rem;
+}
+.inner{
+    margin-left:50px;
+    font-size: 20px;
+    line-height: 2;
+    position:relative;
+    top:5rem;
+}
+.show{
+    display: none;
+}
